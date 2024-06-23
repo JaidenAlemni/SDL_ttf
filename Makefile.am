@@ -156,10 +156,10 @@ EXTRA_DIST = CHANGES.txt COPYING.txt README.txt \
 	SDL2_ttfConfig.cmake	\
 	autogen.sh gcc-fat.sh
 
-noinst_PROGRAMS = showfont glfont
+# noinst_PROGRAMS = showfont glfont
 
-showfont_LDADD = libSDL2_ttf.la
-glfont_LDADD = libSDL2_ttf.la @GL_LIBS@ @MATHLIB@
+# showfont_LDADD = libSDL2_ttf.la
+# glfont_LDADD = libSDL2_ttf.la @GL_LIBS@ @MATHLIB@
 
 # Rule to build tar-gzipped distribution package
 $(PACKAGE)-$(VERSION).tar.gz: distcheck
