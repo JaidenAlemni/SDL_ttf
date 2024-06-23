@@ -57,7 +57,7 @@
 #endif /* __clang__ */
 #elif defined(__MINGW64_VERSION_MAJOR)
 #include <intrin.h>
-#if !defined(SDL_DISABLE_ARM_NEON_H) && defined(__ARM_NEON)
+#if !defined(SDL_DISABLE_ARM_NEON_H) && 0 //defined(__ARM_NEON)
 #  include <arm_neon.h>
 #endif
 #else
@@ -66,7 +66,7 @@
 #include <altivec.h>
 #endif
 #if !defined(SDL_DISABLE_ARM_NEON_H)
-#  if defined(__ARM_NEON)
+#  if 0 //defined(__ARM_NEON)
 #    include <arm_neon.h>
 #  elif defined(__WINDOWS__) || defined(__WINRT__)
 /* Visual Studio doesn't define __ARM_ARCH, but _M_ARM (if set, always 7), and _M_ARM64 (if set, always 1). */
